@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import theme from "./theme"
 
 const StyledFooter = styled.nav`
     display: flex;
@@ -7,13 +8,15 @@ const StyledFooter = styled.nav`
     align-items: center;
     width: 100%;
     height: 5em;
-    background-color: darkgray;
+    background-color: ${theme.darkestColor};
     bottom: 0;
     position: absolute;
+    color: ${theme.lightestColor};
 
     a {
         text-decoration: none;
-        color: black;
+        color: ${theme.lightColor};
     }
 `
+
 export default StyledFooter

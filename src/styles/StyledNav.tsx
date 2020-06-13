@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import theme from "./theme"
 
 const StyledNav = styled.nav`
     display: flex;
@@ -7,7 +8,8 @@ const StyledNav = styled.nav`
     align-items: center;
     width: 100%;
     height: 5em;
-    background-color: darkgray;
+    background-color: ${theme.darkestColor};
+    color: ${theme.lightestColor};
 
     ul {
         justify-content: space-around;
@@ -20,12 +22,16 @@ const StyledNav = styled.nav`
 
     ul li a {
         text-decoration: none;
-        color: white;
         padding: 5px;
+        color: ${theme.lightestColor};
+    }
+
+    ul li a:hover {
     }
 
     .active {
-        color: black;
+        color: ${theme.lightColor};
+        font-weight: 700;
     }
 `
 export default StyledNav
