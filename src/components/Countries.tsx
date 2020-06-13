@@ -1,11 +1,12 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import StyledButton from "../styles/StyledButton"
+import StyledBody from "../styles/StyledBody"
 
 export default function Countries(): JSX.Element {
     const country = countries[Math.floor(Math.random() * countries.length)]
     return (
-        <div>
+        <StyledBody>
             <h1>Countries</h1>
             <h2>Your random country this time around is: </h2>
             <h2>{country}</h2>
@@ -14,7 +15,7 @@ export default function Countries(): JSX.Element {
                     Reload
                 </StyledButton>
             </Link>
-        </div>
+        </StyledBody>
     )
 }
 

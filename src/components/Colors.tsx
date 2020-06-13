@@ -1,12 +1,12 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import StyledColor from "../styles/StyledColor"
+import StyledBody from "../styles/StyledBody"
 import StyledButton from "../styles/StyledButton"
 
 export default function Colors(): JSX.Element {
     const color = getRandomColor()
     return (
-        <StyledColor color={color}>
+        <StyledBody color={color}>
             <h1>Colors</h1>
             <h3>You random color this time around is:</h3>
             <h3>{color}</h3>
@@ -15,7 +15,7 @@ export default function Colors(): JSX.Element {
                     Reload
                 </StyledButton>
             </Link>
-        </StyledColor>
+        </StyledBody>
     )
 }
 

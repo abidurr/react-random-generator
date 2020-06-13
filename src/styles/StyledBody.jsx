@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-const StyledColor = styled.div`
+const StyledBody = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,6 +8,11 @@ const StyledColor = styled.div`
     margin: auto;
     text-shadow: 1px 1px 1px #999999;
     background: ${props => props.color};
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    width: 100%;
 `
 
-export default StyledColor
+export default StyledBody
