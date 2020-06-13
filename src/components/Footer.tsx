@@ -4,7 +4,7 @@ import StyledFooter from "../styles/StyledFooter"
 export default function Footer() {
     return (
         <StyledFooter>
-            <p>Made by abidur</p>
+            <p>Site made by <a href="http://abidur.dev">abidur.dev</a></p>
         </StyledFooter>
     )
 }
