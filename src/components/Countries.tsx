@@ -9,7 +9,11 @@ export default function Countries(): JSX.Element {
             <h1>Countries</h1>
             <h2>Your random country this time around is: </h2>
             <h2>{country}</h2>
-            <Link to="/countries"> <StyledButton>Reload</StyledButton> </Link>
+            <Link to="#">
+                <StyledButton>
+                    Reload
+                </StyledButton>
+            </Link>
         </div>
     )
 }
