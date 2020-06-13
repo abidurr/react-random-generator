@@ -13,16 +13,24 @@ export default function Nav(): JSX.Element {
                 <nav>
                     <ul>
                         <li>
-                            <NavLink exact to="/" activeClassName="active">Home</NavLink>
+                            <NavLink exact to="/" activeClassName="active">
+                                Home
+                            </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/pictures" activeClassName="active">Pictures</NavLink>
+                            <NavLink to="/pictures" activeClassName="active">
+                                Pictures
+                            </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/countries" activeClassName="active">Countries</NavLink>
+                            <NavLink to="/countries" activeClassName="active">
+                                Countries
+                            </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/colors" activeClassName="active">Colors</NavLink>
+                            <NavLink to="/colors" activeClassName="active">
+                                Colors
+                            </NavLink>
                         </li>
                     </ul>
                 </nav>
