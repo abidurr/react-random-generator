@@ -13,10 +13,11 @@ const StyledNav = styled.nav`
 
     ul {
         justify-content: space-around;
+        list-style-type: none;
     }
 
     ul li {
-        list-style-type: none;
+        position: relative;
         display: inline-block;
     }
 
@@ -24,9 +25,26 @@ const StyledNav = styled.nav`
         text-decoration: none;
         padding: 5px;
         color: ${theme.lightestColor};
+        text-transform: uppercase;
     }
 
     ul li a:hover {
+        color: ${theme.lightestColor};
+    }
+
+    ul li a::before {
+        content: "";
+        display: block;
+        height: 1px;
+        position: absolute;
+        background-color: ${theme.lightestColor};
+        bottom: 0;
+        width: 0%;
+        transition: all ease-in-out 200ms;
+    }
+
+    ul li a:hover::before {
+        width: 100%;
     }
 
     .active {
