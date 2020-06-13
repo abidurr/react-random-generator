@@ -8,7 +8,7 @@ export default function Colors(): JSX.Element {
     return (
         <StyledBody color={color}>
             <h1>Colors</h1>
-            <h3>You random color this time around is:</h3>
+            <p>Your random color this time around was given by the hex code:</p>
             <h3>{color}</h3>
             <Link to="#">
                 <StyledButton>

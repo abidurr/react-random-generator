@@ -8,8 +8,8 @@ export default function Countries(): JSX.Element {
     return (
         <StyledBody>
             <h1>Countries</h1>
-            <h2>Your random country this time around is: </h2>
-            <h2>{country}</h2>
+            <p>Your random country this time around is: </p>
+            <h3>{country}</h3>
             <Link to="#">
                 <StyledButton>
                     Reload

@@ -7,7 +7,7 @@ const StyledBody = styled.div`
     align-items: center;
     justify-content: center;
     margin: auto;
-    text-shadow: 2px 2px 2px #333333;
+    text-shadow: 1px 1px 2px #222222;
     background: ${props => props.color ? props.color : theme.darkColor};
     position: absolute;
     height: 100%;
