@@ -10,7 +10,5 @@ const StyledFooter = styled.nav`
     background-color: darkgray;
     bottom: 0;
     position: absolute;
-
-
 `
 export default StyledFooter
