@@ -7,9 +7,7 @@ export default function Pictures(): JSX.Element {
     return (
         <div>
             <h1>Pictures</h1>
-            <StyledImage>
-                <img src="https://picsum.photos/600" alt="Random" />
-            </StyledImage>
+            <StyledImage/>
             <Link to="#">
                 <StyledButton>Reload</StyledButton>
             </Link>
