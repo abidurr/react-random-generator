@@ -1,0 +1,1 @@
+Get picture reload button to change picture
